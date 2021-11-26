@@ -15,6 +15,11 @@
         <xi:include href="../cer/conf/gazebo_cer_torso/gazebo_cer_torso_tripod_nws_yarp.xml" />
         <xi:include href="../cer/conf/gazebo_cer_mobile_base/gazebo_cer_mobile_base_nws_yarp.xml" />
 
+        <!-- odometry -->
+        <xi:include href="../cer/conf/gazebo_cer_odometry/gazebo_cer_odometry.xml" />
+<!--        <xi:include href="../cer/conf/gazebo_cer_odometry/gazebo_cer_odometry_nws_yarp.xml" />-->
+        <xi:include href="../cer/conf/gazebo_cer_odometry/gazebo_cer_odometry_nws_ros2.xml" />
+
         <!-- left arm, wrist and hand -->
         <xi:include href="../cer/conf/gazebo_cer_left_upper_arm/gazebo_cer_left_upper_arm_nws_yarp.xml" />
         <xi:include href="../cer/conf/gazebo_cer_left_wrist/gazebo_cer_left_wrist_nws_yarp.xml" />

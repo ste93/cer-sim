@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE robot PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
+
+<device xmlns:xi="http://www.w3.org/2001/XInclude" name="cer_odometry" type="cerOdometry">
+    <param name="local">prova</param>
+    <paramlist name="ROBOT_GEOMETRY">
+        <elem name="geom_r">10.2</elem>
+        <elem name="geom_l">10.2</elem>
+    </paramlist>
+    <action phase="startup" level="7" type="attach">
+        <param name="device"> mobile_base_device </param>
+    </action>
+    <action phase="shutdown" level="3" type="detach" />
+</device>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE robot PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
+
+<device xmlns:xi="http://www.w3.org/2001/XInclude" name="odometry2D_nws_yarp" type="odometry2D_nws_yarp">
+  <param name="odometer_port_name"> /odometer:o</param>
+  <param name="odometry_port_name"> /odometry:o</param>
+  <param name="velocity_port_name"> /velocity:o</param>
+  <action phase="startup" level="5" type="attach">
+    <paramlist name="networks">
+      <elem name="subdevice_odometry"> cer_odometry </elem>
+    </paramlist>
+  </action>
+  <action phase="shutdown" level="5" type="detach" />
+</device>
